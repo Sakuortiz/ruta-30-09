@@ -1,11 +1,16 @@
-# RUTA 30.09
-Landing interactiva romántica con temática biker/carretera.
+# Ruta 30.09
 
-## Antes de publicar
-Reemplaza `assets/moto.png` por una imagen PNG de la Jettor Stallion 200 Negro Verde. Idealmente usa una imagen con fondo transparente para que la moto se integre con la carretera.
+Landing en primera persona para una experiencia de viaje en moto. La ciudad se recorre en perspectiva y las fachadas de los lugares importantes aparecen integradas como edificios de la escena.
 
-Puedes añadir fotos reales en `assets/` y cambiar las tres tarjetas de la Estación 03 en `index.html`.
+## Incluye
+- Carretera en primera persona con sensación de avance y aceleración.
+- Ciudad lateral sin tráfico de otros vehículos.
+- Fachadas integradas de Room 69, Luna Rosa, KFC, América Express, Papax, Chifa, Dali y Jardín Botánico.
+- MALL PLAZA como fachada generada dentro de la ciudad.
+- Sonido procedural original: motor, viento, lluvia, impactos y soundtrack ambiental.
+- El sonido se activa al pulsar **Encender la moto** por las restricciones de audio de los navegadores.
 
-## Publicar
-Sube todo el contenido de esta carpeta al repositorio. Luego:
-Settings → Pages → Deploy from a branch → main → /(root) → Save.
+## Publicación
+Sube la carpeta completa a GitHub y activa GitHub Pages desde Settings > Pages > rama main > carpeta raiz.
+
+No elimines la carpeta `assets/`: contiene las fachadas que utiliza la escena.
