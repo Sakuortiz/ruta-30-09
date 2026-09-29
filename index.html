@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RUTA 30.09 — Nuestra historia</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="noise"></div>
+<header><span>30 · 09 · 2026</span><span id="hud">RUTA 01 / 07</span></header>
+
+<main>
+<section class="scene active" id="intro">
+  <div class="grid"></div>
+  <div class="copy intro"><small>A STORY IN MOTION</small><h1>RUTA <b>30.09</b></h1>
+  <p>Una historia.<br>Un camino.<br>Dos personas.</p>
+  <button data-next="s1">ENCENDER MOTOR <i>→</i></button></div>
+  <div class="hero-bike"><img src="assets/moto.png" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span>🏍️</span></div>
+</section>
+
+<section class="scene" id="s1"><div class="bg road1"></div><div class="sign">ESTACIÓN 01<small>KM 000 · PUNTO DE PARTIDA</small></div>
+<div class="copy"><small>EL INICIO</small><h2>Este viaje comenzó<br>siendo desconocidos...</h2><p>Dos caminos distintos, sin imaginar que algún día la vida volvería a cruzarlos.</p><button data-next="s2">CONTINUAR <i>→</i></button></div><Bike></Bike></section>
+
+<section class="scene" id="s2"><div class="bg road2"></div><div class="sign">ESTACIÓN 02<small>EL REENCUENTRO</small></div>
+<div class="copy"><small>MURGUITO</small><h2>Nos volvimos a encontrar<br>después de tanto tiempo.</h2><p>Y esta vez, el camino nos llevó mucho más lejos de lo que imaginábamos.</p><button data-next="s3">SEGUIR RUTA <i>→</i></button></div><Bike></Bike></section>
+
+<section class="scene" id="s3"><div class="bg road3"></div><div class="photos"><span>✨</span><span>❤️</span><span>🏍️</span></div><div class="sign">ESTACIÓN 03<small>LOS DÍAS FELICES</small></div>
+<div class="copy"><small>SIN SABERLO</small><h2>Cuando por fin estuvimos juntos,<br>fuimos felices...</h2><p class="white">...y no sabíamos que estábamos viviendo algunos de nuestros momentos favoritos.</p><button data-next="s4">CONTINUAR <i>→</i></button></div><Bike></Bike></section>
+
+<section class="scene dark" id="s4"><div class="bg broken"></div><div class="sign red">ESTACIÓN 04<small>LOS BACHES</small></div>
+<div class="copy"><small>DESVÍOS</small><h2>Pero ningún camino<br>es perfecto.</h2><div class="chips"><span>Baches.</span><span>Rompemuelles.</span><span>Pistas rotas.</span><span>Desvíos.</span></div><p class="white">Hasta que se rompió lo nuestro.</p><button data-next="s5">CONTINUAR <i>→</i></button></div><Bike></Bike></section>
+
+<section class="scene" id="s5"><div class="bg garage"></div><div class="sign">ESTACIÓN 05<small>REPARAR</small></div>
+<div class="copy"><small>DESPUÉS DE TODO</small><h2>A pesar de todo...<br>ambos nos seguimos queriendo.</h2><p>No podemos regresar al punto donde todo comenzó. Pero sí podemos aprender de dónde nos equivocamos.</p><div class="meter"><span></span></div><button data-next="choice">REVISAR LA RUTA <i>→</i></button></div><Bike></Bike></section>
+
+<section class="scene" id="choice"><div class="fork"></div><div class="sign">ESTACIÓN 06<small>EL DESVÍO</small></div>
+<div class="copy center"><small>RUTA RECALCULANDO</small><h2>Hay caminos que conocemos de memoria.<br>Y otros que todavía no sabemos a dónde llevan.</h2><p>Si algún día volvemos a intentarlo, tendría que ser de una manera diferente.</p>
+<div class="choices"><button id="known">CAMINO CONOCIDO</button><button class="new" id="new">NUEVA RUTA <i>→</i></button></div></div><Bike></Bike></section>
+
+<section class="scene" id="known"><div class="bg road1 dim"></div><div class="sign red">RUTA RECALCULANDO<small>MISMO CAMINO</small></div>
+<div class="copy"><small>¿VOLVER A LO MISMO?</small><h2>El camino se parece demasiado<br>a lo que ya conocemos.</h2><p>Tal vez no se trata de volver atrás. Tal vez necesitamos tomar otra dirección.</p><button data-next="choice">ELEGIR OTRA VEZ <i>→</i></button></div><Bike></Bike></section>
+
+<section class="scene" id="new"><div class="bg newroad"></div><div class="sign green">NUEVA RUTA<small>DESTINO: DESCONOCIDO</small></div>
+<div class="copy"><small>CAMBIAR</small><h2>Entonces hagámoslo diferente.</h2><p>No quiero volver al pasado para repetirlo. Quiero volver a encontrarnos para hacerlo mejor.</p><button data-next="final">SEGUIR ESTA RUTA <i>→</i></button></div><Bike></Bike></section>
+
+<section class="scene final" id="final"><div class="finalglow"></div><div class="finalcopy"><small>DESTINO ENCONTRADO · 30.09</small><h2>No sé dónde terminará este nuevo camino.</h2><p>Pero sí sé que me gustaría descubrirlo contigo.</p><div class="vehicles">🏎️ <b>+</b> 🏍️</div><h3>Feliz 30 de septiembre, murguito. ❤️</h3><p>Aunque yo prefiera los carritos y tú las motitos...<br><strong>siempre me gustó recorrer el camino contigo.</strong></p><button id="restart" class="ghost">↻ VOLVER A RECORRER</button></div></section>
+</main>
+<div class="bar"><span id="progress"></span></div><button class="sound" id="sound">♪</button>
+<script src="script.js"></script>
+</body></html>
